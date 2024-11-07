@@ -24,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "heroku-prebuild": "rm -rf node_modules && npm install",
     "postinstall": "npm run build",
     "heroku-postbuild": "npm run build",
     "test": "react-scripts test",
